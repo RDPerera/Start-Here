@@ -4,14 +4,11 @@ import { Project, Words, Image } from "arwes";
 
 class Advertisement extends React.Component {
   render() {
-    const images = require.context("../../public/img", true);
-
-    let staticImage = images("./uni.jpg");
     return [
       <div style={{ padding: 20, margin: "auto", maxWidth: 900 }}>
         <Project animate header={this.props.header}>
           <img
-            src={staticImage}
+            src=""
             alt=""
             style={{
               width: "100%",
