@@ -7,7 +7,6 @@ class Home extends React.Component {
   render() {
     return [
       <div>
-        <Loading />
         <Heading node="h1" class="heading">
           Start Here
         </Heading>
