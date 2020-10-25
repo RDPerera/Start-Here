@@ -7,11 +7,11 @@ import background from "./assets/background-large.jpg";
 import pattern from "./assets/glow.png";
 import CustomNavbar from "./components/CustomNavbar";
 import Home from "./components/Home";
-<<<<<<< Updated upstream
+
 import About from "./components/About";
-=======
+
 import AppInfo from "./components/AppInfo";
->>>>>>> Stashed changes
+
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -25,13 +25,9 @@ class App extends React.Component {
               <div>
                 <CustomNavbar />
                 <Route exact path="/" component={Home} />
-<<<<<<< Updated upstream
-
                 <Route path="/about" component={About} />
-=======
                 <Route exact path="/appinfo" component={AppInfo} />
                 {/* <Route path="/about" component={About} /> */}
->>>>>>> Stashed changes
               </div>
             </Router>
           </Puffs>
