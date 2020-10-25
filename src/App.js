@@ -3,6 +3,7 @@ import './App.css';
 import { ThemeProvider, createTheme, Arwes, Heading, Row, Col } from 'arwes';
 import Puffs from 'arwes/lib/Puffs';
 import Advertisement from './Advertisement';
+import AdList from './AdList';
 import background from './assets/background-large.jpg';
 import pattern from './assets/glow.png';
 
@@ -16,10 +17,9 @@ class App extends React.Component {
             <div>
               <Heading node='h1' class="heading">Start Here</Heading>
               <Row>
-                <Col s={12} m={6}><Advertisement/></Col>
-                <Col s={12} m={6}><Advertisement/></Col>
-                <Col s={12} m={6}><Advertisement/></Col>
-                <Col s={12} m={6}><Advertisement/></Col>
+                
+                <AdList/>
+               
               </Row>
             </div>
           </Puffs>            
