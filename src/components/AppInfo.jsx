@@ -1,18 +1,19 @@
 import React from "react";
+import img from "../assets/ad-img.jpg";
 import {Arwes , Project , Words ,Image,Button} from "arwes";
 class AppInfo extends React.Component {
     render() {
         return[
                 <Arwes background='/static/img/background.jpg' pattern='/static/img/glow.png'>
                 <div style={{ padding: 20 },{width:500 },{marginTop:100}}>
-                    <div style={{width:'60%' }}>
-                    <div style={{marginLeft:'60' }}>
-                    <Image animate resources='/static/img/wallpaper.jpg'>
+                    <div style={{paddingRight:'33.3%' }}>
+                    <div style={{paddingLeft:'33.3%' }}>
+                    <Image animate resources={img}>
                             The vast universe around us
                     </Image>
                     <Project
                         animate
-                        header='PROJECT, OFFICIA DESERUNT ANIM ID EST LABORUM'
+                        header='PROJECT, OFFICIA DESERUNT '
                     >
                         
                         {anim => (
@@ -29,7 +30,7 @@ class AppInfo extends React.Component {
                         )}
                        
                     </Project>
-                    <div style={{marginLeft:'68%'}}>
+                    <div style={{marginLeft:'57%'}}>
                     <div style={{ padding: '20px' },{marginTop:'10px'}}>   
                         <Button animate>Connect</Button>
                         {' '}
