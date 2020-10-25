@@ -7,7 +7,11 @@ import background from "./assets/background-large.jpg";
 import pattern from "./assets/glow.png";
 import CustomNavbar from "./components/CustomNavbar";
 import Home from "./components/Home";
+
 import About from "./components/About";
+
+import AppInfo from "./components/AppInfo";
+
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -21,8 +25,9 @@ class App extends React.Component {
               <div>
                 <CustomNavbar />
                 <Route exact path="/" component={Home} />
-
                 <Route path="/about" component={About} />
+                <Route exact path="/appinfo" component={AppInfo} />
+                {/* <Route path="/about" component={About} /> */}
               </div>
             </Router>
           </Puffs>
