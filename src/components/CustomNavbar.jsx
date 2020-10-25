@@ -9,23 +9,23 @@ function CustomNavbar(props) {
   return (
     <div style={{ margin: "0 auto", padding: 20, width: "100%" }}>
       <Row>
-        <Col s={12} m={6} l={4} xl={3}>
+        <Col s={12} m={6} l={3}>
           {" "}
           <Button onClick={() => history.push("/")} animate>
             Home
           </Button>{" "}
         </Col>
-        <Col s={12} m={6} l={4} xl={3}>
+        <Col s={12} m={6} l={3}>
           <Button onClick={() => history.push("/")} animate>
             Contact Us
           </Button>
         </Col>
-        <Col s={12} m={6} l={4} xl={3}>
+        <Col s={12} m={6} l={3}>
           <Button onClick={() => history.push("/about")} animate>
             About Us
           </Button>
         </Col>
-        <Col s={12} m={6} l={4} xl={3}>
+        <Col s={12} m={6} l={3}>
           <Button animate>Logout</Button>
         </Col>
       </Row>
