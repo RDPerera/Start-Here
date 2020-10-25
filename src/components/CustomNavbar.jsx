@@ -5,9 +5,9 @@ import { Button } from "arwes";
 function CustomNavbar(props) {
   return (
     <div>
-      <Button animate>Cyberpunk</Button>
-      <Button animate>Cyberpunk</Button>
-      <Button animate>Cyberpunk</Button>
+      <Button animate>Home</Button>
+      <Button animate>Contact Us</Button>
+      <Button animate>About</Button>
       <Button animate>Cyberpunk</Button>
       <Button animate>Cyberpunk</Button>
     </div>
@@ -16,7 +16,7 @@ function CustomNavbar(props) {
     //     LAKSHAN
     //   </Navbar.Brand>
     //   <Nav className="mr-auto">
-    //     <Nav.Link as={NavLink} to="/" exact>
+    // <Nav.Link as={NavLink} to="/" exact>
     //       Home
     //     </Nav.Link>
     //     <Nav.Link as={NavLink} to="/about">
