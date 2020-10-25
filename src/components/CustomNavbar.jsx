@@ -1,15 +1,36 @@
 import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Button } from "arwes";
+import { Button, Col, Row, Line, Footer } from "arwes";
+import { useHistory } from "react-router-dom";
+import "./CustomNavbar.css";
 
 function CustomNavbar(props) {
+  const history = useHistory();
   return (
-    <div>
-      <Button animate>Home</Button>
-      <Button animate>Contact Us</Button>
-      <Button animate>About</Button>
-      <Button animate>Cyberpunk</Button>
-      <Button animate>Cyberpunk</Button>
+    <div style={{ margin: "0 auto", padding: 20, width: "100%" }}>
+      <Row>
+        <Col s={12} m={6} l={4} xl={3}>
+          {" "}
+          <Button onClick={() => history.push("/")} animate>
+            Home
+          </Button>{" "}
+        </Col>
+        <Col s={12} m={6} l={4} xl={3}>
+          <Button onClick={() => history.push("/")} animate>
+            Contact Us
+          </Button>
+        </Col>
+        <Col s={12} m={6} l={4} xl={3}>
+          <Button onClick={() => history.push("/about")} animate>
+            About Us
+          </Button>
+        </Col>
+        <Col s={12} m={6} l={4} xl={3}>
+          <Button animate>Logout</Button>
+        </Col>
+      </Row>
+      <Footer animate></Footer>
+      {/* <Line animate layer="success" /> */}
     </div>
     // <Navbar bg="dark" variant="dark">
     //   <Navbar.Brand as={Link} to="/">
