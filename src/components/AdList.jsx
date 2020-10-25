@@ -7,7 +7,7 @@ import { Col } from "arwes";
 
 const datalist = adData.map((data) => {
   return (
-    <Col s={12} m={4}>
+    <Col s={12} m={3}>
       <Advertisement
         key={data.id}
         header={data.header}
