@@ -2,14 +2,13 @@ import React from "react";
 import AdList from "./AdList";
 import { Heading, Row } from "arwes";
 import Loading from "arwes/lib/Loading";
+import img from "../assets/starthere.png";
 
 class Home extends React.Component {
   render() {
     return [
-      <div>
-        <Heading node="h1" class="heading">
-          Start Here
-        </Heading>
+      <div>'
+        <div style={{textAlign: "center"}}><img src={img} style={{width:'50%'}}/></div>
         <Row>
           <AdList />
         </Row>
