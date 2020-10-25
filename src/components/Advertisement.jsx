@@ -1,21 +1,31 @@
-import React from 'react';
-import { Project, Words } from 'arwes';
+import React from "react";
+import { Project, Words, Image } from "arwes";
+// import img from "../assets/uni.jpg";
 
 class Advertisement extends React.Component {
   render() {
+    const images = require.context("../../public/img", true);
+
+    let staticImage = images("./uni.jpg");
     return [
-      <div style={{ padding: 20 }}>
-        <Project
-          animate
-          header={this.props.header}>
-          {anim => (
-            <p><Words animate show={anim.entered}>
-              {this.props.content}
-            </Words></p>
-          )}
+      <div style={{ padding: 20, margin: "auto", maxWidth: 900 }}>
+        <Project animate header={this.props.header}>
+          <img
+            src={staticImage}
+            alt=""
+            style={{
+              width: "100%",
+              height: "300px",
+              // backgroundImage: "url(./../assets/uni.jpg)",
+            }}
+          />
+
+          <p>
+            <Words animate>{this.props.content}</Words>
+          </p>
         </Project>
-      </div>
-    ]
+      </div>,
+    ];
   }
 }
 
