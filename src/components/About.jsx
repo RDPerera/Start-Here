@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Arwes, Image, Project, Words } from "arwes";
-
+import img from "../assets/starthere.png";
 export default class About extends Component {
   render() {
     return (
@@ -23,7 +23,7 @@ export default class About extends Component {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <Image animate resources="/static/img/wallpaper.jpg">
+        <Image animate resources={img}>
           The vast universe around us
         </Image>
         <p>
