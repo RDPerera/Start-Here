@@ -9,6 +9,11 @@ import CustomNavbar from "./components/CustomNavbar";
 import Home from "./components/Home";
 import Login from "./components/Login";
 
+import About from "./components/About";
+
+import AppInfo from "./components/AppInfo";
+
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -21,6 +26,8 @@ class App extends React.Component {
         return <>
           <CustomNavbar />
           <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route exact path="/appinfo" component={AppInfo} />
         </>
       }
     }
