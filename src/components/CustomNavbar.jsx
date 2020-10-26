@@ -7,7 +7,7 @@ import "./CustomNavbar.css";
 function CustomNavbar(props) {
   const history = useHistory();
   return (
-    <div style={{ margin: "0 auto", padding: 20, width: "100%" }}>
+    <div style={{ margin: "0 auto", padding: 20, width: "100%",backgroundColor:'black',opacity:'0.8'}}>
       <Row>
         <Col s={12} m={6} l={3}>
           {" "}
@@ -29,7 +29,6 @@ function CustomNavbar(props) {
           <Button animate>Logout</Button>
         </Col>
       </Row>
-      <Footer animate></Footer>
       {/* <Line animate layer="success" /> */}
     </div>
     // <Navbar bg="dark" variant="dark">

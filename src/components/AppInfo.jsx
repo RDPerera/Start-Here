@@ -30,10 +30,9 @@ class AppInfo extends React.Component {
                         )}
                        
                     </Project>
-                    <div style={{marginLeft:'57%'}}>
+                    <div style={{marginLeft:'46%'}}>
                     <div style={{ padding: '20px' },{marginTop:'10px'}}>   
-                        <Button animate>Connect</Button>
-                        {' '}
+
                         <Button animate layer='success'>
                         <i className='mdi mdi-chemical-weapon' /> Go To StartUP WEB
                         </Button>
