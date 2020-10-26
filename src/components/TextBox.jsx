@@ -4,7 +4,7 @@ import { Frame } from 'arwes';
 class TextBox extends React.Component {    
     constructor (type,placeholder,width,top, bottom, onChange) {
         super(type,placeholder,width,top, bottom, onChange);
-        this.state = { show: true };
+        this.state = { show: true, };
     }
 
   render() {
@@ -19,7 +19,7 @@ class TextBox extends React.Component {
         style={{width: this.props.width!=null?this.props.width:"100%", backgroundColor: "transparent", marginTop: this.props.top!=null?this.props.top:"auto", marginBottom: this.props.bottom!=null?this.props.bottom:"auto"}}
     >
         <div>
-            <input type={this.props.type} placeholder={this.props.placeholder} style={styles} onChange={this.props.onChange} />
+            <input type={this.props.type} placeholder={this.props.placeholder} style={styles} onChange={this.props.onNameChange} />
         </div>
     </Frame>
     ]
