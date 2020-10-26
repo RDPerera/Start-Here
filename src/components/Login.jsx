@@ -1,15 +1,17 @@
 import React from 'react';
 import './login.css';
-import { Frame, Button } from 'arwes';
+import { Frame, Button, Link } from 'arwes';
 import TextBox from "./TextBox";
 import firebase from "firebase";
 import logo from '../assets/starthere.png';
+import Arwes from 'arwes/lib/Arwes';
 
 class Login extends React.Component {
   constructor(props) {
     super(props);
     this.changeEmail=this.changeEmail.bind(this);
     this.changePass=this.changePass.bind(this);
+    this.history=props.history;
 
     this.state={
       email:"",
@@ -21,7 +23,9 @@ class Login extends React.Component {
     firebase.auth().signInWithEmailAndPassword(this.state.email,this.state.pass) 
       
       .then( async res => {
-       console.log(res)
+       firebase.auth().onAuthStateChanged(()=>{
+         this.history.push("/");
+       })
       })
       .catch(err => {
         console.log(err)
@@ -42,6 +46,7 @@ class Login extends React.Component {
   }
   render() {
     return [
+        <Arwes>
         <div class="form">
           <Frame
             show={true}
@@ -53,7 +58,7 @@ class Login extends React.Component {
             >
                 <div style = {{textAlign: "center"}}>
                     <img src={logo} alt="StartHere Logo" style = {{width: "75%"}}/>
-                    <TextBox type="text" placeholder="Username" top="5%" bottom="5%"
+                    <TextBox type="email" placeholder="Email" top="5%" bottom="5%"
                                   onNameChange={this.changeEmail}
                            ></TextBox>
                     <TextBox type="password" placeholder="Password" top="5%" bottom="5%" 
@@ -63,9 +68,13 @@ class Login extends React.Component {
                     <Button animate layer='primary' style={{width: "100%"}} onClick={() => this.handleClick()}>
                         <i className='mdi' /> Login 
                     </Button>
+                    <br/>
+                    <br/>
+                    Don't have account? <Link href='/register'>StartItUP</Link>.
                 </div>
             </Frame>
       </div>
+      </Arwes>
     ]
   }
 }
