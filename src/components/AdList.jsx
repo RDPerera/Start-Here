@@ -11,6 +11,7 @@ const datalist = adData.map((data) => {
         path={data.path}
         header={data.header}
         content={data.content}
+        rating = {data.rating}
       />
     </Col>
   );
