@@ -13,7 +13,7 @@ The key features of this application will be;
 # UI Mockups
 | Sign-Up | Sign-In | Home Page | About-us |
 |:-:|:-:|:-:|:-:|
-| ![sign-up screen](docs/imgs/mockups/1.png) | ![sign-in screen](docs/imgs/mockups/2.png) | ![welcome screen](src/mockups/1.png) | ![about-us screen](src/mockups/2.png) 
+| ![start-here](src/mockups/4.png) | ![start-here](src/mockups/5.png) | ![start-here](src/mockups/1.png) | ![start-here](src/mockups/2.png) 
 
 
 ## Demo
