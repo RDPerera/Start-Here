@@ -9,6 +9,7 @@ import CustomNavbar from "./components/CustomNavbar";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import Logout from "./components/logout";
 
 import click from "./sounds/click.mp3";
 import type from "./sounds/typing.mp3";
@@ -57,6 +58,7 @@ class App extends React.Component {
                   <Route exact path="/" component={Home} />
                   <Route path="/about" component={About} />
                   <Route path="/add" component={AddStartup} />
+                  <Route path="/logout" component={Logout} />
                   <Route path="/contact" component={Contact} />
                   <Route exact path="/appinfo/:job" component={AppInfo} />
                   <Route path="/login" component={Login} />
