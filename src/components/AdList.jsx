@@ -15,7 +15,7 @@ const datalist = adData.map((data) => {
         category={data.category}
         phone={data.phone}
         image={data.name}
-        // content={data.content}
+        rating = {data.rating}
       />
     </Col>
   );

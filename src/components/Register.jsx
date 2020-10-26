@@ -10,17 +10,39 @@ class Register extends React.Component {
   constructor(props) {
     super(props);
     // this.onChangenewBatchNo=this.onChangenewBatchNo.bind(this);
+    this.changeUser=this.changeUser.bind(this);
+    this.changeEmail=this.changeEmail.bind(this);
+    this.changePass=this.changePass.bind(this);
 
     this.state={
       email:"",
       pass:"",
       username:""
-    }    
+    };
 }
   handleClick() {
     console.log(this.state);
+    firebase.auth().createUserWithEmailAndPassword(this.state.email,this.state.pass);
+    
   }
-
+  changeUser(evt) {
+    console.log(evt.target.value);
+    this.setState({
+      username:evt.target.value
+    });
+  }
+  changeEmail(evt) {
+    console.log(evt.target.value);
+    this.setState({
+      email:evt.target.value
+    });
+  }
+  changePass(evt) {
+    console.log(evt.target.value);
+    this.setState({
+      pass:evt.target.value
+    });
+  }
 
   render() {
     return [
@@ -40,7 +62,7 @@ class Register extends React.Component {
               placeholder="Username"
               top="5%"
               bottom="5%"
-              onChange={(e)=> console.log(e.value)}
+              onNameChange={this.changeUser}
 
             ></TextBox>
             <TextBox
@@ -49,7 +71,8 @@ class Register extends React.Component {
               top="5%"
               bottom="5%"
               value={"a@s.c"}
-              onChange={(e)=> this.setState({email:e.target.value}).bind(this)}
+              onNameChange={this.changeEmail}
+
 
             ></TextBox>
             <TextBox
@@ -58,7 +81,8 @@ class Register extends React.Component {
               top="5%"
               bottom="5%"
               // value={this.state.pass}
-              onChange={(e)=> this.setState({pass:e.target.value}).bind(this)}
+              onNameChange={this.changePass}
+              
 
             ></TextBox>
             <TextBox
