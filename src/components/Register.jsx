@@ -10,31 +10,36 @@ class Register extends React.Component {
   constructor(props) {
     super(props);
     // this.onChangenewBatchNo=this.onChangenewBatchNo.bind(this);
+    this.changeUser=this.changeUser.bind(this);
+    this.changeEmail=this.changeEmail.bind(this);
+    this.changePass=this.changePass.bind(this);
 
     this.state={
       email:"",
       pass:"",
       username:""
-    }    
+    };
 }
   handleClick() {
     console.log(this.state);
   }
   changeUser(evt) {
-    // console.log(evt.target.value);
+    console.log(evt.target.value);
     this.setState({
       username:evt.target.value
-    })
+    });
   }
   changeEmail(evt) {
+    console.log(evt.target.value);
     this.setState({
       email:evt.target.value
-    })
+    });
   }
   changePass(evt) {
+    console.log(evt.target.value);
     this.setState({
       pass:evt.target.value
-    })
+    });
   }
 
   render() {
