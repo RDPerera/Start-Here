@@ -1,37 +1,74 @@
 [
   {
     "id": 1,
-    "path": "job1",
-    "header": "Job 1 Posted",
-    "name": "Park and Pay",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi ut aliquip"
+    "path": "1",
+    "rating": 5,
+    "header": "The Smart Solutions Provider",
+    "name": "Commercial Tech Plus",
+    "web": "https://commercialtp.com",
+    "phone": "0774653543",
+    "category": "IT Services",
+    "adr": "360B Gateway, Galle Road, Thalpitiya, Wadduwa.",
+    "content": "Commercial Technologies Plus is one of the elite companies in Sri Lanka whose ventures span across customized enterprise solution system fields such as cloud mobility enterprise, augmented reality & virtual reality, web development."
   },
   {
     "id": 2,
-    "path": "job2",
-    "header": "Job 2 Posted",
-    "name": "Seven's Idea (Pvt) Ltd",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi ut aliquip"
+    "path": "2",
+    "rating": 5,
+    "header": "A.I | Big Data | RPA",
+    "name": "LYKEN TECHNOLOGIES",
+    "web": "https://lykentech.com",
+    "phone": "777689412",
+    "category": "Artificial Intelligence",
+    "adr": "No 37, Elibank Road, Colombo 05",
+    "content": "Lyken specializes in Artificial Intelligence, Robotic Process Automation, Data Analytics, Digital Marketing and A.I Chatbots. Lyken is launching its very own E-Commerce platform to enable Made in Sri Lanka products to be sold world-wide."
   },
   {
     "id": 3,
-    "path": "job3",
-    "header": "Job 3 Posted",
-    "name": "DirectPay (Pvt) Ltd",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi ut aliquip"
+    "path": "3",
+    "rating": 3,
+    "header": "Securing Business E2E",
+    "name": "CyberLabs (PVT) LTD",
+    "web": "https://cyber-labs.biz/",
+    "phone": "775432485",
+    "category": "IT Services",
+    "adr": "No.57/3 Flower Road, Colombo 07",
+    "content": "Helps businesses secure their infrastructure, applications and data in the digital space."
   },
   {
     "id": 4,
-    "path": "job4",
-    "header": "Job 4 Posted",
-    "name": "Lanka Market",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi ut aliquip"
+    "path": "4",
+    "rating": 2,
+    "header": "Life Made Simple",
+    "name": "Marx",
+    "web": "https://marx.lk/",
+    "phone": "777336012",
+    "category": "Financial/Fintech",
+    "adr": "Level 37 West Tower, World Trade Center , Colombo 01",
+    "content": "There is more to money than knowing how to earn it. Similarly there’s more to your life than paying bills. Marx is the first and only App in Sri Lanka to give you total control over your earnings, savings, whilst growing and spending your money."
   },
   {
     "id": 5,
-    "path": "job5",
-    "header": "Job 5 Posted",
-    "name": "INOTREND Int.",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi ut aliquip"
+    "path": "5",
+    "rating": 4,
+    "header": "Made Life Easy",
+    "name": "SpectraSenz",
+    "web": "http://www.skilldevo.com/",
+    "phone": "773358517",
+    "category": "Internet of Things",
+    "adr": "2nd Floor , Bernard's Building, Kohuwela",
+    "content": "We make IoT solutions that enable Security and conveniences to our Customers. Our first product is a 100% locally engineered Device and app to Automate the Roller gates. "
+  },
+  {
+    "id": 5,
+    "path": "5",
+    "rating": 4,
+    "header": "Made Life Easy",
+    "name": "SpectraSenz",
+    "web": "http://www.skilldevo.com/",
+    "phone": "773358517",
+    "category": "Internet of Things",
+    "adr": "2nd Floor , Bernard's Building, Kohuwela",
+    "content": "We make IoT solutions that enable Security and conveniences to our Customers. Our first product is a 100% locally engineered Device and app to Automate the Roller gates. "
   }
 ]

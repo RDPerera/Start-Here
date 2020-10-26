@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../assets/ad-img.jpg";
-import { Arwes, Project, Words, Image, Button, Header } from "arwes";
+import { Project, Words, Image, Button, Header, List } from "arwes";
 import background from "../assets/background-large.jpg";
 import pattern from "../assets/glow.png";
 import adData from "../data/adData.json";
@@ -14,7 +14,7 @@ class AppInfo extends React.Component {
         return (
           <>
             <Header animate>
-              <h1 style={{ margin: 0 }}>{data.header}</h1>
+              <h1 style={{ margin: 0 }}>{data.name}</h1>
             </Header>
             <br />
             <Image animate resources={img}>
@@ -29,6 +29,13 @@ class AppInfo extends React.Component {
                 </p>
               )}
             </Project>
+            <br />
+            <List node="ul">
+              <li>Category  : {data.category}</li>
+              <li>Phnone No : {data.phone}</li>
+              <li>Address   : {data.adr}</li>
+              <li>Website   : {data.web}</li>
+            </List>
             <div style={{ margin: "5% auto", textAlign: "right" }}>
               <Button animate layer="success">
                 <i className="mdi mdi-chemical-weapon" /> Go To StartUP WEB
@@ -41,7 +48,7 @@ class AppInfo extends React.Component {
       }
     });
 
-    return [<div style={{ padding: "5% 33.3%" }}>{datalist}</div>];
+    return [<div style={{ padding: "5% 27.3%" }}>{datalist}</div>];
   }
 }
 
