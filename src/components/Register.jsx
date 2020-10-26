@@ -22,6 +22,8 @@ class Register extends React.Component {
 }
   handleClick() {
     console.log(this.state);
+    firebase.auth().createUserWithEmailAndPassword(this.state.email,this.state.pass);
+    
   }
   changeUser(evt) {
     console.log(evt.target.value);
