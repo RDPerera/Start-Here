@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Col, Row } from "arwes";
 import { useHistory } from "react-router-dom";
 
-import { Icon, InlineIcon } from "@iconify/react";
+import { InlineIcon } from "@iconify/react";
 import chemicalWeapon from "@iconify/icons-mdi/chemical-weapon";
 import robot from "@iconify/icons-mdi/robot";
 
