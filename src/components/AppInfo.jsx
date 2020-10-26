@@ -31,10 +31,10 @@ class AppInfo extends React.Component {
             </Project>
             <br />
             <List node="ul">
-              <li>Category  : {data.category}</li>
-              <li>Phnone No : {data.phone}</li>
-              <li>Address   : {data.adr}</li>
-              <li>Website   : {data.web}</li>
+              <li>Category     : {data.category}</li>
+              <li>Phnone No    : {data.phone}</li>
+              <li>Address      : {data.adr}</li>
+              <li>Website      : {data.web}</li>
             </List>
             <div style={{ margin: "5% auto", textAlign: "right" }}>
               <Button animate layer="success">
