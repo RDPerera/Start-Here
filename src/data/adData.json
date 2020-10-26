@@ -26,15 +26,16 @@
   {
     "id": 3,
     "path": "3",
-    "rating": 3,
-    "header": "Securing Business E2E",
-    "name": "CyberLabs (PVT) LTD",
-    "web": "https://cyber-labs.biz/",
-    "phone": "775432485",
-    "category": "IT Services",
-    "adr": "No.57/3 Flower Road, Colombo 07",
-    "content": "Helps businesses secure their infrastructure, applications and data in the digital space."
+    "rating": 5,
+    "header": "There is always a better way",
+    "name": "Leapbitz",
+    "web": "https://leapbitz.com/",
+    "phone": "+94773936444",
+    "category": "Consulting",
+    "adr": "334/1, Batagama south,",
+    "content": "We believe that there is always room for improvement in any aspect of your business. We would like to add value to your businesses with expert knowledge and tools to stay competitive in the business. Leapbitz is looking forward to your quires"
   },
+  
   {
     "id": 4,
     "path": "4",
@@ -62,6 +63,29 @@
   {
     "id": 5,
     "path": "5",
+    "rating": 4,
+    "header": "Open Education for All Students",
+    "name": "Edvicon International",
+    "web": "https://www.edvicon.org",
+    "phone": "775895402",
+    "category": "Educational/ Edutech",
+    "adr": "Colombo",
+    "content": "Edvicon International assists students in their studies. The organization help students to skill up and be industry-ready. Also, the organization provides educational resources free of charge."
+  },
+  {
+    "id": 6,
+    "path": "6",
+    "rating": 1,
+    "header": "Securing Business E2E",
+    "name": "CyberLabs (PVT) LTD",
+    "web": "https://cyber-labs.biz/",
+    "phone": "775432485",
+    "category": "IT Services",
+    "adr": "No.57/3 Flower Road, Colombo 07",
+    "content": "Helps businesses secure their infrastructure, applications and data in the digital space."
+  }, {
+    "id": 7,
+    "path": "7",
     "rating": 4,
     "header": "Made Life Easy",
     "name": "SpectraSenz",

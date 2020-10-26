@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Header, Image, Project, Words } from "arwes";
+import { Header, Image, Project, Words ,List , Heading} from "arwes";
 
 import img from "../assets/starthere.png";
 export default class About extends Component {
@@ -11,31 +11,26 @@ export default class About extends Component {
           <h1 style={{ margin: 0 }}>ABOUT US</h1>
         </Header>
         <br />
-        <Project animate header="PROJECT, OFFICIA DESERUNT ANIM ID EST LABORUM">
+        <Project animate header="START HERE">
           {(anim) => (
             <p>
               <Words animate show={anim.entered}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis laboris nisi ut aliquip ex. Duis aute
-                irure. Consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud.
+               Our application “Start Here” is built with the primary intention of providing a platform for startups of Sri Lanka to advertise their job opportunities and to attract new customers while retaining existing customers. It helps encourage entrepreneurship among the youth of Sri Lanka through the growth of working spaces.
+
               </Words>
             </p>
           )}
         </Project>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        
         <Image animate resources={img}>
           The vast universe around us
         </Image>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <Heading node='h1'>Our Solution</Heading>
+        <List node='ul'>
+                <li>Platform to advertise job opportunities to look for passionate and skilled individuals.</li>
+                <li>Opportunity to attract new clients and retain existing ones</li>
+                <li>Platform to find curious, risk taking investors investors and better fundings</li>
+            </List>
       </div>
     );
   }
