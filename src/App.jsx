@@ -16,6 +16,7 @@ import deploy from "./sounds/deploy.mp3";
 
 import About from "./components/About";
 import Contact from "./components/Contact";
+import AddStartup from "./components/AddStartup";
 
 import AppInfo from "./components/AppInfo";
 
@@ -55,6 +56,7 @@ class App extends React.Component {
                   <CustomNavbar />
                   <Route exact path="/" component={Home} />
                   <Route path="/about" component={About} />
+                  <Route path="/add" component={AddStartup} />
                   <Route path="/contact" component={Contact} />
                   <Route exact path="/appinfo/:job" component={AppInfo} />
                   <Route path="/login" component={Login} />
