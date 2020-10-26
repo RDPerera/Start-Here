@@ -38,7 +38,7 @@ function CustomNavbar(props) {
           </Button>
         </Col>
         <Col s={12} m={6} l={3}>
-          <Button animate>
+          <Button onClick={() => history.push("/login")} animate>
             <InlineIcon icon={robot} /> Logout
           </Button>
         </Col>

@@ -10,7 +10,12 @@ const datalist = adData.map((data) => {
         key={data.id}
         path={data.path}
         header={data.header}
-        content={data.content}
+        name={data.name}
+        web={data.web}
+        category={data.category}
+        phone={data.phone}
+        image={data.name}
+        // content={data.content}
       />
     </Col>
   );
