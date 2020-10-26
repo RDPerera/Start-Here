@@ -4,7 +4,9 @@ Our application “Start Here” is built with the primary intention of **encour
 The key features of this application will be;
 
 1.Platform to advertise job opportunities to look for passionate and skilled individuals.
+
 2.Opportunity to attract new clients and retain existing ones.
+
 3.Platform to find curious, risk taking investors investors and better fundings.
 
 
