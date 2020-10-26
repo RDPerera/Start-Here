@@ -11,7 +11,6 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 
 import About from "./components/About";
-import Contact from "./components/Contact";
 
 import AppInfo from "./components/AppInfo";
 
