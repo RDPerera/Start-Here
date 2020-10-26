@@ -10,7 +10,7 @@ import Arwes from "arwes/lib/Arwes";
 class Register extends React.Component {
   constructor(props) {
     super(props);
-    // this.onChangenewBatchNo=this.onChangenewBatchNo.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.changeUser = this.changeUser.bind(this);
     this.changeEmail = this.changeEmail.bind(this);
     this.changePass = this.changePass.bind(this);
@@ -23,19 +23,19 @@ class Register extends React.Component {
       repass: "",
       username: "",
       equal: true,
-      auth: false
+      auth: true
     };
   }
   handleClick() {
     console.log(this.state);
-    firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.pass).catch(function(error){
+    firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.pass).catch(err => {
       this.setState({
         auth: false
-      })
+      });
     });
     this.history.push("/login");
-
   }
+
   changeUser(evt) {
     console.log(evt.target.value);
     this.setState({
@@ -73,6 +73,14 @@ class Register extends React.Component {
     const displayError = () => {
       if (this.state.equal === false) {
         return <p><Words animate layer='alert'>Invalid Password!</Words></p>
+      } else {
+        return <div></div>;
+      }
+    }
+
+    const displayRegError = () => {
+      if (this.state.auth === false) {
+        return <p><Words animate layer='alert'>Registration Failed!</Words></p>
       } else {
         return <div></div>;
       }
@@ -133,6 +141,7 @@ class Register extends React.Component {
                     Have an account? <Link href='/login'>Start Here</Link>
               <div>
                 {displayError()}
+                {displayRegError()}
               </div>
             </div>
           </Frame>
