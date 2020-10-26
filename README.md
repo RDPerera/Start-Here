@@ -1,5 +1,5 @@
 # Start-Here
-
+![start-here](src/mokups/asd.png)
 Our application “Start Here” is built with the primary intention of **encouraging entrepreneurship among the youth of Sri Lanka through the growth of working spaces**.
 The key features of this application will be;
 
@@ -8,7 +8,7 @@ The key features of this application will be;
 2. Opportunity to attract new clients and retain existing ones.
 
 3. Platform to find curious, risk taking investors and better fundings.
-![start-here](src/mokups/asd.png)
+
 
 
 ## Demo
