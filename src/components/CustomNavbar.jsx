@@ -16,7 +16,7 @@ function CustomNavbar(props) {
             <Col s={12} m={3} l={4} xl={3}><Link href='/' animate style={{display:"inline",verticalAlign:"middle",paddingLeft:"50px"}}> #Home </Link></Col>
             <Col s={12} m={3} l={4} xl={3}><Link href='/about' animate style={{display:"inline",verticalAlign:"middle",paddingLeft:"50px"}}> #About </Link></Col>
             <Col s={12} m={3} l={4} xl={3}><Link href='/login' animate style={{display:"inline",verticalAlign:"middle",paddingLeft:"50px"}}> #Sign In </Link></Col>
-            <Col s={12} m={3} l={4} xl={3}><Link href='/register' animate style={{display:"inline",verticalAlign:"middle",paddingLeft:"50px"}}> #AddSartUP </Link></Col>
+            <Col s={12} m={3} l={4} xl={3}><Link href='/register' animate style={{display:"inline",verticalAlign:"middle",paddingLeft:"50px"}}> #Register </Link></Col>
             </Row>
             </div>
             </Header>
