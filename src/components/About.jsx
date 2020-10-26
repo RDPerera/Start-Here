@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Arwes, Image, Project, Words } from "arwes";
+import { Image, Project, Words } from "arwes";
 import img from "../assets/starthere.png";
 export default class About extends Component {
   render() {

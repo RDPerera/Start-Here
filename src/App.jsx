@@ -18,7 +18,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends React.Component {
   render() {
-    let displayContent = () => {
+    let displayContent= ()=>{
       if (
         window.location.pathname === "/login" ||
         window.location.pathname === "/register"
@@ -30,15 +30,13 @@ class App extends React.Component {
             <Route path="/register" component={Register} />{" "}
           </>
         );
-      } else {
-        return (
-          <>
-            <CustomNavbar />
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route exact path="/appinfo" component={AppInfo} />
-          </>
-        );
+      }else{
+        return <>
+          <CustomNavbar />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route exact path="/appinfo/:job" component={AppInfo} />
+        </>
       }
     };
 
