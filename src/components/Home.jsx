@@ -2,7 +2,6 @@ import React from "react";
 import AdList from "./AdList";
 import { Row } from "arwes";
 import img from "../assets/starthere.png";
-
 class Home extends React.Component {
   render() {
     return [
