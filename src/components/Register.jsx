@@ -20,7 +20,22 @@ class Register extends React.Component {
   handleClick() {
     console.log(this.state);
   }
-
+  changeUser(evt) {
+    // console.log(evt.target.value);
+    this.setState({
+      username:evt.target.value
+    })
+  }
+  changeEmail(evt) {
+    this.setState({
+      email:evt.target.value
+    })
+  }
+  changePass(evt) {
+    this.setState({
+      pass:evt.target.value
+    })
+  }
 
   render() {
     return [
@@ -40,7 +55,7 @@ class Register extends React.Component {
               placeholder="Username"
               top="5%"
               bottom="5%"
-              onChange={(e)=> console.log(e.value)}
+              onNameChange={this.changeUser}
 
             ></TextBox>
             <TextBox
@@ -49,7 +64,8 @@ class Register extends React.Component {
               top="5%"
               bottom="5%"
               value={"a@s.c"}
-              onChange={(e)=> this.setState({email:e.target.value}).bind(this)}
+              onNameChange={this.changeEmail}
+
 
             ></TextBox>
             <TextBox
@@ -58,7 +74,8 @@ class Register extends React.Component {
               top="5%"
               bottom="5%"
               // value={this.state.pass}
-              onChange={(e)=> this.setState({pass:e.target.value}).bind(this)}
+              onNameChange={this.changePass}
+              
 
             ></TextBox>
             <TextBox
