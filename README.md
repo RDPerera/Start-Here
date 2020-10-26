@@ -8,6 +8,7 @@ The key features of this application will be;
 2.Opportunity to attract new clients and retain existing ones.
 
 3.Platform to find curious, risk taking investors investors and better fundings.
+![start-here](src/assets/starthere.png)
 
 # UI Mockups
 | Splash Screen | Sign-Up | Sign-In | Home Page |
