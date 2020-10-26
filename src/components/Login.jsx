@@ -18,7 +18,14 @@ class Login extends React.Component {
   }
   handleClick() {
     console.log(this.state);
-    firebase.auth().createUserWithEmailAndPassword(this.state.email,this.state.pass);
+    firebase.auth().signInWithEmailAndPassword(this.state.email,this.state.pass) 
+      
+      .then( async res => {
+       console.log(res)
+      })
+      .catch(err => {
+        console.log(err)
+      })
     
   }
   changeEmail(evt) {
