@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Row } from "arwes";
+import { Button, Col, Row,Link } from "arwes";
 import { useHistory } from "react-router-dom";
 
 import { InlineIcon } from "@iconify/react";
@@ -28,19 +28,23 @@ function CustomNavbar(props) {
           </Button>{" "}
         </Col>
         <Col s={12} m={6} l={3}>
-          <Button onClick={() => history.push("/contact")} animate>
-            <InlineIcon icon={chemicalWeapon} /> Contact Us
-          </Button>
-        </Col>
-        <Col s={12} m={6} l={3}>
           <Button onClick={() => history.push("/about")} animate>
             <InlineIcon icon={chemicalWeapon} /> About Us
           </Button>
         </Col>
         <Col s={12} m={6} l={3}>
-          <Button animate>
-            <InlineIcon icon={robot} /> Logout
+          <Link href="/login">
+          <Button  animate>
+            <InlineIcon icon={robot} /> Sign In
           </Button>
+          </Link>
+        </Col>
+        <Col s={12} m={6} l={3}>
+          <Link href="/register">
+          <Button  animate>
+            <InlineIcon icon={robot} /> Sign UP
+          </Button>
+          </Link>
         </Col>
       </Row>
       {/* <Line animate layer="success" /> */}
