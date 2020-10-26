@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { Button, Col, Row, Line, Footer } from "arwes";
+import React from "react";
+import { Button, Col, Row } from "arwes";
 import { useHistory } from "react-router-dom";
 
 import { Icon, InlineIcon } from "@iconify/react";

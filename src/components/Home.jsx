@@ -13,7 +13,7 @@ class Home extends React.Component {
         <br></br>
         <br></br>
         <div id="information" style={{ textAlign: "center" }}>
-          <img src={img} style={{ width: "50%" }} />
+          <img src={img} alt="StartHere Logo" style={{ width: "50%" }} />
         </div>
         <br></br>
         <br></br>

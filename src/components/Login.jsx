@@ -1,6 +1,6 @@
 import React from 'react';
 import './login.css';
-import { Col, Row, Frame, Button } from 'arwes';
+import { Frame, Button } from 'arwes';
 import TextBox from "./TextBox";
 import logo from '../assets/starthere.png';
 
@@ -17,7 +17,7 @@ class Login extends React.Component {
             style={{ padding: "10%" }}
             >
                 <div style = {{textAlign: "center"}}>
-                    <img src={logo} style = {{width: "75%"}}/>
+                    <img src={logo} alt="StartHere Logo" style = {{width: "75%"}}/>
                     <TextBox type="text" placeholder="Username" top="5%" bottom="5%"></TextBox>
                     <TextBox type="password" placeholder="Password" top="5%" bottom="5%"></TextBox>
                     <Button animate layer='primary' style={{width: "100%"}}>
