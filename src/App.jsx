@@ -15,6 +15,7 @@ import type from "./sounds/typing.mp3";
 import deploy from "./sounds/deploy.mp3";
 
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 import AppInfo from "./components/AppInfo";
 
