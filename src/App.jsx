@@ -16,6 +16,7 @@ import deploy from "./sounds/deploy.mp3";
 
 import About from "./components/About";
 import Contact from "./components/Contact";
+import AddStartup from "./components/AddStartup";
 
 import AppInfo from "./components/AppInfo";
 
@@ -44,30 +45,6 @@ const mySounds = {
 
 class App extends React.Component {
   render() {
-    let displayContent = () => {
-      if (
-        window.location.pathname === "/login" ||
-        window.location.pathname === "/register"
-      ) {
-        return (
-          <>
-            {" "}
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />{" "}
-          </>
-        );
-      } else {
-        return (
-          <>
-            <CustomNavbar />
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route exact path="/appinfo/:job" component={AppInfo} />
-          </>
-        );
-      }
-    };
 
     return (
       <ThemeProvider theme={createTheme()}>
@@ -75,7 +52,16 @@ class App extends React.Component {
           <SoundsProvider sounds={createSounds(mySounds)}>
             <Puffs>
               <Router>
-                <div>{displayContent()}</div>
+                <div>
+                  <CustomNavbar />
+                  <Route exact path="/" component={Home} />
+                  <Route path="/about" component={About} />
+                  <Route path="/add" component={AddStartup} />
+                  <Route path="/contact" component={Contact} />
+                  <Route exact path="/appinfo/:job" component={AppInfo} />
+                  <Route path="/login" component={Login} />
+                  <Route path="/register" component={Register} />
+                </div>
               </Router>
             </Puffs>
           </SoundsProvider>
