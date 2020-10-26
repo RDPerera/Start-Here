@@ -3,11 +3,11 @@
 Our application “Start Here” is built with the primary intention of **encouraging entrepreneurship among the youth of Sri Lanka through the growth of working spaces**.
 The key features of this application will be;
 
-1.Platform to advertise job opportunities to look for passionate and skilled individuals.
+1. Platform to advertise job opportunities to look for passionate and skilled individuals.
 
-2.Opportunity to attract new clients and retain existing ones.
+2. Opportunity to attract new clients and retain existing ones.
 
-3.Platform to find curious, risk taking investors investors and better fundings.
+3. Platform to find curious, risk taking investors investors and better fundings.
 ![start-here](src/assets/starthere.png)
 
 # UI Mockups
