@@ -11,6 +11,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 import AppInfo from "./components/AppInfo";
 
@@ -36,6 +37,7 @@ class App extends React.Component {
             <CustomNavbar />
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
             <Route exact path="/appinfo" component={AppInfo} />
           </>
         );

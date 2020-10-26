@@ -1,3 +1,10 @@
 Button {
   width: 24vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 576px) {
+  Button {
+    width: 83vw;
+  }
 }

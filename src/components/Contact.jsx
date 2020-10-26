@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Header, Image, Project, Words } from "arwes";
 import img from "../assets/starthere.png";
-export default class About extends Component {
+export default class Contact extends Component {
   render() {
     return (
       <div style={{ margin: "0 auto", padding: 20, maxWidth: 1000 }}>
         <Header animate>
-          <h1 style={{ margin: 0 }}>ABOUT US</h1>
+          <h1 style={{ margin: 0 }}>CONTACT US</h1>
         </Header>
         <br />
         <Project animate header="PROJECT, OFFICIA DESERUNT ANIM ID EST LABORUM">
