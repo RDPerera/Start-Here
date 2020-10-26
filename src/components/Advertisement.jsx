@@ -12,7 +12,9 @@ class Advertisement extends React.Component {
       <Link href={getPath()}>
         <div style={{ padding: 20, margin: "auto", maxWidth: 900 }}>
           <Project animate header={this.props.header}>
-            <Image animate resources={img}></Image>
+            <Image animate resources={img}>
+              <p style={{ fontSize: 40 }}>✡ ✡ ✡ ✡ ✡</p>
+            </Image>
 
             <p>
               <Words animate>{this.props.content}</Words>
