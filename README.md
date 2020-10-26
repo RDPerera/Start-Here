@@ -9,7 +9,14 @@ The key features of this application will be;
 
 3.Platform to find curious, risk taking investors investors and better fundings.
 
+# UI Mockups
+| Splash Screen | Sign-Up | Sign-In | Home Page |
+|:-:|:-:|:-:|:-:|
+| ![Splash screen](docs/imgs/mockups/8.png) | ![sign-up screen](docs/imgs/mockups/1.png) | ![sign-in screen](docs/imgs/mockups/2.png) | ![welcome screen](docs/imgs/mockups/3.png) |
 
+| My-Profile | Settings | About-us | Donate to a cause |
+|:-:|:-:|:-:|:-:|
+| ![my-profile screen](docs/imgs/mockups/4.png) | ![settings screen](docs/imgs/mockups/5.png) | ![about-us screen](docs/imgs/mockups/6.png) | ![donation screen](docs/imgs/mockups/7.png) |
 
 
 ## Install
