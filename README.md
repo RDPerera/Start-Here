@@ -19,6 +19,9 @@ The key features of this application will be;
 |:-:|:-:|:-:|:-:|
 | ![my-profile screen](docs/imgs/mockups/4.png) | ![settings screen](docs/imgs/mockups/5.png) | ![about-us screen](docs/imgs/mockups/6.png) | ![donation screen](docs/imgs/mockups/7.png) |
 
+## Demo
+https://starthereapp.herokuapp.com/ 
+
 
 ## Install
 Using npm, run from the root of the repository:
