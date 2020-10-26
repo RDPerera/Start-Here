@@ -58,5 +58,17 @@
     "category": "Internet of Things",
     "adr": "2nd Floor , Bernard's Building, Kohuwela",
     "content": "We make IoT solutions that enable Security and conveniences to our Customers. Our first product is a 100% locally engineered Device and app to Automate the Roller gates. "
+  },
+  {
+    "id": 5,
+    "path": "5",
+    "rating": 4,
+    "header": "Made Life Easy",
+    "name": "SpectraSenz",
+    "web": "http://www.skilldevo.com/",
+    "phone": "773358517",
+    "category": "Internet of Things",
+    "adr": "2nd Floor , Bernard's Building, Kohuwela",
+    "content": "We make IoT solutions that enable Security and conveniences to our Customers. Our first product is a 100% locally engineered Device and app to Automate the Roller gates. "
   }
 ]
